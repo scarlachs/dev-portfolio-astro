@@ -1,0 +1,12 @@
+{
+	"useTabs": true,
+  "printWidth": 400,
+	"plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+  "tabWidth": 2,
+  "bracketSameLine": false,
+  "arrowParens": "always",
+  "proseWrap": "preserve",
+	"overrides": [{ "files": "*.astro", "options": { "parser": "astro" } }],
+  "astroAllowShorthand": false,
+  "tailwindConfig": "./tailwind.config.cjs"
+}
