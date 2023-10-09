@@ -1,6 +1,5 @@
 {
 	"useTabs": true,
-  "printWidth": 400,
 	"plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
   "tabWidth": 2,
   "bracketSameLine": false,

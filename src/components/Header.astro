@@ -1,0 +1,63 @@
+---
+import LogoSvg from "../assets/icons/logo.svg.astro";
+import GithubSvg from "../assets/icons/github.svg.astro";
+import LinkedinSvg from "../assets/icons/linkedin.svg.astro";
+import DarkModeSwitch from "./DarkModeSwitch.astro";
+
+const menu = ["Home", "About", "Projects", "Contact"];
+---
+
+<header
+	class="sticky top-0 z-40 border-b border-slate-900/10 backdrop-blur dark:border-slate-100/10"
+>
+	<nav class="container flex items-center justify-between py-4">
+		<a class="h-10" href="/">
+			<LogoSvg />
+			<span class="sr-only">Pascal</span>
+		</a>
+
+		<div class="flex items-center text-sm">
+			<ul class="flex gap-6 font-semibold max-md:hidden">
+				{
+					menu.map((data) => (
+						<li>
+							<a
+								href={`#${data.toLowerCase()}`}
+								class="hover:text-purple-600 dark:hover:text-purple-400"
+							>
+								{data}
+							</a>
+						</li>
+					))
+				}
+			</ul>
+			<ul
+				class="flex items-center gap-4 md:ml-4 md:border-l md:border-slate-900/30 md:pl-4 md:dark:border-slate-100/30"
+			>
+				<li>
+					<a
+						href="https://github.com/scarlachs"
+						class="flex h-5 w-5 text-sm text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+						rel="noopener"
+						aria-label="Pascal on GitHub"
+					>
+						<GithubSvg />
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://www.linkedin.com/in/pascalschaar/"
+						class="flex h-5 w-5 text-sm text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+						rel="noopener"
+						aria-label="Pascal on LinkedIn"
+					>
+						<LinkedinSvg />
+					</a>
+				</li>
+				<li>
+					<DarkModeSwitch />
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
