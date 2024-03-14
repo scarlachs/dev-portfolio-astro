@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
-import vercel from "@astrojs/vercel/serverless";
+import vercel from "@astrojs/vercel/static";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,6 +11,12 @@ export default defineConfig({
 			applyBaseStyles: false,
 		}),
 	],
-	output: "server",
-	adapter: vercel(),
+	output: "static",
+	adapter: vercel({
+		webAnalytics: {
+			enabled: true,
+		},
+		maxDuration: 8,
+		imageService: true,
+	}),
 });
