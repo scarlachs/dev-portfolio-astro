@@ -2,9 +2,10 @@
 import ProjectImage from "@/components/ProjectImage.astro";
 import { ProjectText, type TextItem } from "@/components/ProjectText";
 import { Image } from "astro:assets";
-import ImagePhoto from "@/assets/images/pascalschaar-com.png";
-import ImageFit from "@/assets/images/marcel-fit.png";
-import ImageCreative from "@/assets/images/creativestudio-lb-de.png";
+import ImagePhoto from "@/assets/images/website-portfolio-photography.png";
+import ImageDev from "@/assets/images/website-portfolio-developer.png";
+import ImageFit from "@/assets/images/website-landingpage-personal-coach.png";
+import ImageCreative from "@/assets/images/website-landingpage-media-designer.png";
 
 type ProjectData = {
 	text: TextItem;
@@ -35,7 +36,7 @@ const projectsData: ProjectData[] = [
 			usedStack: ["astro", "react", "tailwindcss", "typescript"],
 		},
 		image: {
-			file: ImagePhoto,
+			file: ImageDev,
 			alt: "",
 		},
 	},
