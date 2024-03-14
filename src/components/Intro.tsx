@@ -1,5 +1,5 @@
-import { ButtonGroup } from "@/components/ButtonGroup";
-import { Button } from "@/components/ui/button";
+import { ButtonGroup } from "../components/ButtonGroup";
+import { Button } from "../components/ui/button";
 import type { ReactNode } from "react";
 
 export type IntroData = {

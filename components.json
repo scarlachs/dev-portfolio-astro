@@ -9,9 +9,5 @@
 		"baseColor": "slate",
 		"cssVariables": false,
 		"prefix": ""
-	},
-	"aliases": {
-		"components": "@/components",
-		"utils": "@/ts/utils"
 	}
 }

@@ -1,12 +1,12 @@
 import * as React from "react";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "../components/ui/dropdown-menu";
 
 export const DarkModeToggle = () => {
 	const [theme, setThemeState] = React.useState<
