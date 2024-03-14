@@ -8,12 +8,7 @@ export type IntroData = {
 	buttons: Array<{
 		label: string;
 		link: string;
-		variant?:
-			| "default"
-			| "outline"
-			| "secondary"
-			| "ghost"
-			| "link";
+		variant?: "default" | "outline" | "secondary" | "ghost" | "link";
 	}>;
 };
 
@@ -55,7 +50,7 @@ const Text = ({ data }: Text) => {
 
 const Image = ({ children }: Image) => {
 	return (
-		<div className="overflow-hidden max-md:absolute max-md:right-0 max-md:top-0 max-md:size-20 max-md:rounded-full min-[520px]:max-md:-translate-y-1/2 md:ps-16">
+		<div className="overflow-hidden max-md:absolute max-md:right-0 max-md:top-0 max-md:size-20 max-md:rounded-full min-[520px]:max-md:-translate-y-1/2 md:ps-20">
 			{children}
 		</div>
 	);
@@ -63,7 +58,7 @@ const Image = ({ children }: Image) => {
 
 export const Intro = ({ data, children }: Props) => {
 	return (
-		<section className="container mb-16 pt-20 md:mb-24">
+		<section className="container mb-20 pt-16 md:mb-24">
 			<div className="relative md:grid md:grid-cols-2 md:items-center md:gap-10">
 				<Text data={data} />
 				<Image>{children}</Image>
