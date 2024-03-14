@@ -130,7 +130,7 @@ export const ProjectText = ({ data, index }: Props) => {
 	return (
 		<div
 			className={
-				index % 2 === 1 ? "order-2 md:pe-16" : "max-md:order-2 md:ps-16"
+				index % 2 === 1 ? "order-2 lg:pe-16" : "max-md:order-2 lg:ps-16"
 			}
 		>
 			<StackIcons tech={data.usedStack} />
