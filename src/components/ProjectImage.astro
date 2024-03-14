@@ -1,0 +1,7 @@
+---
+const { index } = Astro.props;
+---
+
+<div class={index % 2 === 1 ? "order-1" : undefined}>
+	<slot />
+</div>

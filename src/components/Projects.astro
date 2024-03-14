@@ -1,0 +1,86 @@
+---
+import ProjectImage from "@/components/ProjectImage.astro";
+import { ProjectText, type TextItem } from "@/components/ProjectText";
+import { Image } from "astro:assets";
+import ImagePhoto from "@/assets/images/pascalschaar-com.png";
+import ImageFit from "@/assets/images/marcel-fit.png";
+import ImageCreative from "@/assets/images/creativestudio-lb-de.png";
+
+type ProjectData = {
+	text: TextItem;
+	image: {
+		file: ImageMetadata;
+		alt: string;
+	};
+};
+
+const projectsData: ProjectData[] = [
+	{
+		text: {
+			title: "Portfolio: Fotografie",
+			copy: "Eine Website, die meine Tätigkeit als Fotograf übersichtlich darstellt. Einfache Nutzerführung und ein exklusiver Kunden-Login.",
+			website: "https://pascal.photos",
+			usedStack: ["sveltekit", "tailwindcss", "typescript"],
+		},
+		image: {
+			file: ImagePhoto,
+			alt: "",
+		},
+	},
+	{
+		text: {
+			title: "Portfolio: Entwicklung",
+			copy: "Willkommen in meiner Welt des Codes! Diese Website betrachtest du bereits. Wahlweise im Light- oder Dark-Mode.",
+			website: "https://schaar.dev",
+			usedStack: ["astro", "react", "tailwindcss", "typescript"],
+		},
+		image: {
+			file: ImagePhoto,
+			alt: "",
+		},
+	},
+	{
+		text: {
+			title: "Landingpage: Personal Trainer",
+			copy: "Ganzheitliches Training für ein positives Lebensgefühl. Im individuellen 1:1 Personal Coaching für Körper und Geist.",
+			website: "https://marcel.fit",
+			usedStack: ["html", "bootstrap", "scss", "typescript", "webpack"],
+		},
+		image: {
+			file: ImageFit,
+			alt: "",
+		},
+	},
+	{
+		text: {
+			title: "Landingpage: Mediendesigner",
+			/* copy: "Eine Startseite mit Kontaktformular, sowie eine Unterseite mit der Übersicht aller Projekte. Frontend-Umsetzung mit SvelteKit und Storyblok als Headless CMS angebunden.", */
+			copy: "",
+			website: "https://www.creativestudio-lb.de",
+			usedStack: ["sveltekit", "tailwindcss", "typescript", "storyblok"],
+		},
+		image: {
+			file: ImageCreative,
+			alt: "",
+		},
+	},
+];
+---
+
+<section class="container mb-16 scroll-mt-20 md:mb-24" id="projects">
+	{
+		projectsData.map((project, i) => {
+			return (
+				<div class="mb-16 grid gap-5 last:mb-0 md:mb-24 md:grid-cols-2 md:items-center md:gap-10">
+					<ProjectText data={project.text} index={i} />
+					<ProjectImage index={i}>
+						<Image
+							src={project.image.file}
+							alt={project.image.alt}
+						/>
+					</ProjectImage>
+				</div>
+			);
+		})
+	}
+</section>

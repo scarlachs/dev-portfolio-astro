@@ -1,54 +1,19 @@
 ---
-import GithubSvg from "../assets/icons/github.svg.astro";
-import LinkedinSvg from "../assets/icons/linkedin.svg.astro";
+import { MetaNavigation } from "./MetaNavigation";
+import { SocialNavigation } from "./SocialNavigation";
+
+const copyright = `Copyright &copy; ${new Date().getFullYear()} Pascal Schaar`;
 ---
 
-<div class="container py-6 md:py-4">
+<div class="container mt-6 text-slate-600 dark:text-slate-400">
 	<div
-		class="flex flex-col-reverse items-center justify-between gap-6 md:flex-row"
+		class="flex flex-col-reverse items-center justify-between gap-6 py-6 md:mt-4 md:flex-row md:py-2.5"
 	>
-		<p class="text-sm text-slate-600 dark:text-slate-400">
-			Copyright &copy; {new Date().getFullYear()} Pascal Schaar
-		</p>
-		<div class="flex flex-col items-center max-md:gap-6 md:flex-row">
-			<ul
-				class="flex items-center gap-4 md:mr-4 md:border-r md:border-slate-400 md:pr-4 md:dark:border-slate-600"
-			>
-				<li>
-					<a
-						href="https://github.com/scarlachs"
-						class="flex h-5 w-5 text-sm text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-						rel="noopener"
-						aria-label="Pascal on GitHub"
-					>
-						<GithubSvg />
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://www.linkedin.com/in/pascalschaar/"
-						class="flex h-5 w-5 text-sm text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-						rel="noopener"
-						aria-label="Pascal on LinkedIn"
-					>
-						<LinkedinSvg />
-					</a>
-				</li>
-			</ul>
-			<ul class="flex flex-col items-center gap-6 md:flex-row">
-				<li>
-					<a
-						class="max-md:w-100 flex text-sm text-slate-600 hover:text-slate-700 hover:underline dark:text-slate-400 dark:hover:text-slate-300"
-						href="/privacy-policy">Privacy Policy</a
-					>
-				</li>
-				<li>
-					<a
-						class="max-md:w-100 flex text-sm text-slate-600 hover:text-slate-700 hover:underline dark:text-slate-400 dark:hover:text-slate-300"
-						href="/impressum">Legal Notice &ndash; Impressum</a
-					>
-				</li>
-			</ul>
+		<p class="text-sm" set:html={copyright} />
+		<div class="max-md:space-y-4 md:flex md:items-center md:space-x-4">
+			<SocialNavigation />
+
+			<MetaNavigation />
 		</div>
 	</div>
 </div>

@@ -1,0 +1,56 @@
+---
+import DefaultLayout from "@/layouts/DefaultLayout.astro";
+import type { Meta } from "@/ts/types";
+
+const meta: Meta = {
+	title: "Impressum",
+	description: "",
+};
+---
+
+<DefaultLayout {...meta}>
+	<section class="container">
+		<div
+			class="prose prose-slate pt-16 dark:prose-invert prose-headings:text-slate-800 dark:prose-headings:text-slate-200"
+		>
+			<h1>Impressum</h1>
+
+			<p>
+				Pascal Schaar<br />
+				Bornwiese 2<br />
+				21391 Reppenstedt
+			</p>
+
+			<h2>Kontakt</h2>
+			<p>
+				{/* Telefon: &#91;Telefonnummer&#93;<br /> */}
+				E-Mail: in<!-- @wn -->fo<!-- .qmd- -->@sc<!-- $d;@ -->haa<!-- .com -->r.dev
+			</p>
+
+			<h2>Umsatzsteuer-ID</h2>
+			<p>
+				Umsatzsteuer-Identifikationsnummer gemäß § 27 a
+				Umsatzsteuergesetz:<br />
+				DE315467726
+			</p>
+
+			<h2>
+				Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle
+			</h2>
+			<p>
+				Wir sind nicht bereit oder verpflichtet, an
+				Streitbeilegungsverfahren vor einer
+				Verbraucherschlichtungsstelle teilzunehmen.
+			</p>
+
+			<p>
+				Quelle: <a
+					href="https://www.e-recht24.de/impressum-generator.html"
+					rel="noopener"
+					target="_blank"
+					>https://www.e-recht24.de/impressum-generator.html</a
+				>
+			</p>
+		</div>
+	</section>
+</DefaultLayout>

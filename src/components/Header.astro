@@ -1,63 +1,29 @@
 ---
-import LogoSvg from "../assets/icons/logo.svg.astro";
-import GithubSvg from "../assets/icons/github.svg.astro";
-import LinkedinSvg from "../assets/icons/linkedin.svg.astro";
-import DarkModeSwitch from "./DarkModeSwitch.astro";
-
-const menu = ["Home", "About", "Projects", "Contact"];
+import LogoSvg from "@/assets/icons/logo.svg.astro";
+import { DarkModeToggle } from "@/components/DarkModeToggle";
+import { MainNavigation } from "@/components/MainNavigation";
+import { SocialNavigation } from "@/components/SocialNavigation";
 ---
 
 <header
-	class="sticky top-0 z-40 border-b border-slate-900/10 backdrop-blur dark:border-slate-100/10"
+	class="sticky top-0 z-50 border-b border-slate-900/10 backdrop-blur supports-[backdrop-filter]:bg-slate-100/60 dark:border-slate-50/10 dark:supports-[backdrop-filter]:bg-slate-950/60"
 >
-	<nav class="container flex items-center justify-between py-4">
-		<a class="h-10" href="/">
+	<nav class="container flex items-center justify-between py-2.5">
+		<a class="h-9" href="/">
 			<LogoSvg />
 			<span class="sr-only">Pascal</span>
 		</a>
 
-		<div class="flex items-center text-sm">
-			<ul class="flex gap-6 font-semibold max-md:hidden">
-				{
-					menu.map((data) => (
-						<li>
-							<a
-								href={`#${data.toLowerCase()}`}
-								class="hover:text-purple-600 dark:hover:text-purple-400"
-							>
-								{data}
-							</a>
-						</li>
-					))
-				}
-			</ul>
-			<ul
-				class="flex items-center gap-4 md:ml-4 md:border-l md:border-slate-900/30 md:pl-4 md:dark:border-slate-100/30"
+		<!-- @TODO add divide classes and fix whitespace -->
+		<div class="flex items-center">
+			<MainNavigation />
+
+			<div
+				class="flex items-center md:ml-2 md:border-l md:border-slate-400 md:pl-2 md:dark:border-slate-600"
 			>
-				<li>
-					<a
-						href="https://github.com/scarlachs"
-						class="flex h-5 w-5 text-sm text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-						rel="noopener"
-						aria-label="Pascal on GitHub"
-					>
-						<GithubSvg />
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://www.linkedin.com/in/pascalschaar/"
-						class="flex h-5 w-5 text-sm text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-						rel="noopener"
-						aria-label="Pascal on LinkedIn"
-					>
-						<LinkedinSvg />
-					</a>
-				</li>
-				<li>
-					<DarkModeSwitch />
-				</li>
-			</ul>
+				<SocialNavigation />
+				<DarkModeToggle client:load />
+			</div>
 		</div>
 	</nav>
 </header>

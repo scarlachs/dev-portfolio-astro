@@ -1,0 +1,24 @@
+{
+	"redirects": [
+		{
+			"source": "/linkedin",
+			"destination": "https://www.linkedin.com/in/pascalschaar/",
+            "permanent": true
+		},
+		{
+			"source": "/github",
+			"destination": "https://github.com/scarlachs",
+            "permanent": true
+		},
+		{
+			"source": "/photo",
+			"destination": "https://pascal.photos",
+            "permanent": true
+		},
+		{
+			"source": "/trustpilot",
+			"destination": "https://de.trustpilot.com/review/schaar.dev",
+            "permanent": true
+		}
+	]
+}
