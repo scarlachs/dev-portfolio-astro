@@ -50,7 +50,7 @@ const Text = ({ data }: Text) => {
 
 const Image = ({ children }: Image) => {
 	return (
-		<div className="overflow-hidden max-md:absolute max-md:right-0 max-md:top-0 max-md:size-20 max-md:rounded-full min-[520px]:max-md:-translate-y-1/2 md:ps-20">
+		<div className="overflow-hidden max-md:absolute max-md:right-0 max-md:top-0 max-md:size-20 max-md:rounded-full min-[520px]:max-md:-translate-y-1/2 lg:ps-20">
 			{children}
 		</div>
 	);
