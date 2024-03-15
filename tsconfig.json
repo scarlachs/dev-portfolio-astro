@@ -3,10 +3,10 @@
 	"compilerOptions": {
 		"jsx": "react-jsx",
 		"jsxImportSource": "react",
-		"baseUrl": "/Users/schaar/Projects/Git/dev-portfolio-astro",
+		"baseUrl": "src",
         "paths": {
           "@/*": [
-            "./src/*"
+            "./*"
           ]
         }
 	}
