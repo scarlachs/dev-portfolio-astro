@@ -6,7 +6,7 @@ export const MetaNavigation = () => {
 			aria-label="Meta Navigation"
 			className="md:border-l md:border-slate-400 md:pl-5 md:dark:border-slate-600"
 		>
-			<ul className="flex flex-col items-center gap-5 md:flex-row">
+			<ul className="flex flex-col items-center gap-2 md:flex-row md:gap-5">
 				{metaNavigationData.map((item) => (
 					<li key={item}>
 						<a
