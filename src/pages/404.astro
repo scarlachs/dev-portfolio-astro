@@ -1,0 +1,29 @@
+---
+import { ButtonGroup } from "src/components/ButtonGroup";
+import { Button, buttonVariants } from "src/components/ui/button";
+import DefaultLayout from "src/layouts/DefaultLayout.astro";
+import type { Meta } from "src/ts/types";
+
+const meta: Meta = {
+	title: "404: Seite nicht gefunden",
+	description: "",
+};
+---
+
+<DefaultLayout {...meta}>
+	<section class="container flex min-h-96 items-center">
+		<div class="pt-16">
+			<h1 class="mb-5 text-3xl font-bold lg:text-5xl">
+				Seite nicht gefunden
+			</h1>
+			<p class="mb-10 text-lg">
+				Leider existiert die von dir gesuchte Seite nicht.
+			</p>
+			<Button asChild
+				><a href="/" class={buttonVariants({ variant: "secondary" })}
+					>Zur Startseite</a
+				></Button
+			>
+		</div>
+	</section>
+</DefaultLayout>
