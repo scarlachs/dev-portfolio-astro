@@ -28,7 +28,7 @@ const Text = ({ data }: Text) => {
 			<h1 className="mb-5 text-4xl font-bold max-md:pe-24 lg:text-5xl">
 				{data.title}
 			</h1>
-			<p className="mb-10 text-lg leading-7 sm:max-lg:w-10/12 xl:w-11/12">
+			<p className="mb-10 text-lg sm:max-lg:w-10/12 xl:w-11/12">
 				{data.copy}
 			</p>
 
