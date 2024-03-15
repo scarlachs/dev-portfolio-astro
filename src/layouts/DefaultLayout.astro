@@ -97,17 +97,15 @@ const { title, description } = Astro.props;
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={Astro.url} />
 		{
-			/* <meta property="og:image" content={$page.data.head.og.image.src} /> */
+			/*
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:alt" content="" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="628" />
+        <meta name="twitter:card" content="summary_large_image" />
+            */
 		}
-		<meta property="og:image:type" content="image/jpeg" />
-		{
-			/* <meta property="og:image:alt" content={$page.data.head.og.image.alt} /> */
-		}
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="628" />
-		<meta property="og:locale" content="de_DE" />
-
-		<meta name="twitter:card" content="summary_large_image" />
 
 		<meta name="url" content={Astro.url} />
 		<link rel="canonical" href={Astro.url} />
