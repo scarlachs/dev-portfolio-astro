@@ -16,7 +16,6 @@ const meta: Meta = {
 
 const introData: IntroData = {
 	title: "Frontend-Entwickler",
-	// copy: "Welcome to my world of code! I'm a frontend developer on a mission to blend cutting-edge technology with my passion for helping young entrepreneurs and self-employed individuals thrive in the digital landscape.",
 	copy: "Moin! Und willkommen in meiner Welt des Codes! Ich bin Frontend-Entwickler und zeige hier eine Auswahl meiner bisherigen Projekte.",
 	buttons: [
 		{
@@ -61,7 +60,7 @@ const accordionData: AccordionData[] = [
 	},
 	{
 		title: "Gibt es noch weitere Projekte?",
-		text: `Als Frontend-Entwickler von 08/2021 bis 06/2024 sind bei der wendweb GmbH in Hannover unter anderem folgende Projekte entstanden:${list}Jedes Projekt wurde mit TYPO3, Bootstrap, SCSS und TypeScript umgesetzt.`,
+		text: `Als Frontend-Entwickler von 08/2021 bis heute sind bei der wendweb GmbH in Hannover unter anderem folgende Projekte entstanden:${list}Jedes Projekt wurde mit TYPO3, Bootstrap, SCSS und TypeScript umgesetzt.`,
 	},
 ];
 
@@ -77,6 +76,8 @@ const contactData: ContactData = {
 			src={IntroImage}
 			alt=""
 			class="intro-image-mask h-full w-full object-cover"
+			widths={[80, 160, 568, 1136]}
+			sizes={"(max-width: 767.98px) 80px, (max-width: 1023.98px) 380px, (max-width: 1279.98px) 396px, (max-width: 1399.98px) 508px, 568px"}
 			loading={"eager"}
 		/>
 	</Intro>
@@ -85,5 +86,5 @@ const contactData: ContactData = {
 
 	<Accordion data={accordionData} client:idle />
 
-	<Contact data={contactData} />
+	<Contact data={contactData} client:idle />
 </DefaultLayout>
