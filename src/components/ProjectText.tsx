@@ -1,22 +1,22 @@
-import { ExternalLinkIcon } from "../assets/icons/external-link.svg";
-import { GitHubIcon } from "../assets/icons/github.svg";
-import { BootstrapIcon } from "../assets/icons/techstack/bootstrap.svg";
-import { ScssIcon } from "../assets/icons/techstack/scss.svg";
-import { TailwindcssIcon } from "../assets/icons/techstack/tailwindcss.svg";
-import { HtmlIcon } from "../assets/icons/techstack/html.svg";
-import { CssIcon } from "../assets/icons/techstack/css.svg";
-import { JavascriptIcon } from "../assets/icons/techstack/javascript.svg";
-import { TypescriptIcon } from "../assets/icons/techstack/typescript.svg";
-import { WebpackIcon } from "../assets/icons/techstack/webpack.svg";
-import { AstroIcon } from "../assets/icons/techstack/astro.svg";
-import { SvelteKitIcon } from "../assets/icons/techstack/sveltekit.svg";
-import { ReactIcon } from "../assets/icons/techstack/react.svg";
-import { Typo3Icon } from "../assets/icons/techstack/typo3.svg";
-import { StoryblokIcon } from "../assets/icons/techstack/storyblok.svg";
-import { ButtonGroup } from "../components/ButtonGroup";
-import { Button } from "../components/ui/button";
+import { ExternalLinkIcon } from "@/assets/icons/external-link.svg";
+import { GitHubIcon } from "@/assets/icons/github.svg";
+import { BootstrapIcon } from "@/assets/icons/techstack/bootstrap.svg";
+import { ScssIcon } from "@/assets/icons/techstack/scss.svg";
+import { TailwindcssIcon } from "@/assets/icons/techstack/tailwindcss.svg";
+import { HtmlIcon } from "@/assets/icons/techstack/html.svg";
+import { CssIcon } from "@/assets/icons/techstack/css.svg";
+import { JavascriptIcon } from "@/assets/icons/techstack/javascript.svg";
+import { TypescriptIcon } from "@/assets/icons/techstack/typescript.svg";
+import { WebpackIcon } from "@/assets/icons/techstack/webpack.svg";
+import { AstroIcon } from "@/assets/icons/techstack/astro.svg";
+import { SvelteKitIcon } from "@/assets/icons/techstack/sveltekit.svg";
+import { ReactIcon } from "@/assets/icons/techstack/react.svg";
+import { Typo3Icon } from "@/assets/icons/techstack/typo3.svg";
+import { StoryblokIcon } from "@/assets/icons/techstack/storyblok.svg";
+import { ButtonGroup } from "@/components/ButtonGroup";
+import { Button } from "@/components/ui/button";
 import { type ReactNode } from "react";
-import { className } from "../ts/constants";
+import { className } from "@/ts/constants";
 
 type stack =
 	| "html"

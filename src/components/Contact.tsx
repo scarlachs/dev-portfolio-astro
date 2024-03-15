@@ -1,8 +1,8 @@
-import { LinkedInIcon } from "../assets/icons/linkedin.svg";
+import { LinkedInIcon } from "@/assets/icons/linkedin.svg";
 import { ButtonGroup } from "./ButtonGroup";
 import { Button } from "./ui/button";
-import { EnvelopeIcon } from "../assets/icons/envelope.svg";
-import { LINK_LINKEDIN, className } from "../ts/constants";
+import { EnvelopeIcon } from "@/assets/icons/envelope.svg";
+import { LINK_LINKEDIN, className } from "@/ts/constants";
 import type { MouseEvent } from "react";
 
 export type ContactData = {

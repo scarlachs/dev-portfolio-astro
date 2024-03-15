@@ -3,11 +3,11 @@ import {
 	NavigationMenuItem,
 	NavigationMenuLink,
 	NavigationMenuList,
-} from "../components/ui/navigation-menu";
-import { Button } from "../components/ui/button";
-import { GitHubIcon } from "../assets/icons/github.svg";
-import { LinkedInIcon } from "../assets/icons/linkedin.svg";
-import { LINK_GITHUB, LINK_LINKEDIN } from "../ts/constants";
+} from "@/components/ui/navigation-menu";
+import { Button } from "@/components/ui/button";
+import { GitHubIcon } from "@/assets/icons/github.svg";
+import { LinkedInIcon } from "@/assets/icons/linkedin.svg";
+import { LINK_GITHUB, LINK_LINKEDIN } from "@/ts/constants";
 
 type SocialNetwork = {
 	name: string;
