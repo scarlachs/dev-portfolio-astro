@@ -1,8 +1,8 @@
 # Pascal
 
-Dies ist eine Seite von [Pascal](https://schaar.dev).
+This is a page by [Pascal](https://schaar.dev).
 
-Ich fing mit diesem Projekt an, um [Astro](https://astro.build) und [Shadcn](https://ui.shadcn.com) auszuprobieren und mein Wissen damit auszubauen.
+I started with this project to test out [Astro](https://astro.build) and [shadcn](https://ui.shadcn.com).
 
 ### Dev
 
