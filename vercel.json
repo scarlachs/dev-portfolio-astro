@@ -16,7 +16,7 @@
 			"permanent": true
 		},
 		{
-			"source": ["/trustpilot", "/review", "/reviews"],
+			"source": "/trustpilot",
 			"destination": "https://de.trustpilot.com/review/schaar.dev",
 			"permanent": true
 		}
