@@ -3,22 +3,22 @@
 		{
 			"source": "/linkedin",
 			"destination": "https://www.linkedin.com/in/pascalschaar/",
-            "permanent": true
+			"permanent": true
 		},
 		{
 			"source": "/github",
 			"destination": "https://github.com/scarlachs",
-            "permanent": true
+			"permanent": true
 		},
 		{
 			"source": "/photos",
 			"destination": "https://pascal.photos",
-            "permanent": true
+			"permanent": true
 		},
 		{
 			"source": ["/trustpilot", "/review", "/reviews"],
 			"destination": "https://de.trustpilot.com/review/schaar.dev",
-            "permanent": true
+			"permanent": true
 		}
 	]
 }

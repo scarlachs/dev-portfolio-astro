@@ -6,8 +6,8 @@ export function JavascriptIcon({ className }: Props) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-            width="630"
-            height="630"
+			width="630"
+			height="630"
 			viewBox="0 0 630 630"
 			className={className}
 			aria-labelledby="title"

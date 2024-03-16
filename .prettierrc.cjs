@@ -6,7 +6,7 @@ module.exports = {
 	bracketSameLine: false,
 	arrowParens: "always",
 	proseWrap: "preserve",
-	overrides: [{ "files": "*.astro", "options": { "parser": "astro" } }],
+	overrides: [{ files: "*.astro", options: { parser: "astro" } }],
 	astroAllowShorthand: false,
-	tailwindConfig: "./tailwind.config.cjs"
-}
+	tailwindConfig: "./tailwind.config.cjs",
+};

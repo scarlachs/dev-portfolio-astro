@@ -9,7 +9,7 @@ import { Button } from "./ui/button";
 type MainNavigationItem = {
 	title: string;
 	href: string;
-    key: string;
+	key: string;
 };
 
 type MainNavigationItems = MainNavigationItem[];
@@ -18,17 +18,17 @@ const mainNavigationData: MainNavigationItems = [
 	{
 		title: "Projekte",
 		href: "#projects",
-        key: 'projects'
+		key: "projects",
 	},
 	{
 		title: "Über mich",
 		href: "#about",
-        key: 'about'
+		key: "about",
 	},
 	{
 		title: "Kontakt",
 		href: "#contact",
-        key: 'contact'
+		key: "contact",
 	},
 ];
 

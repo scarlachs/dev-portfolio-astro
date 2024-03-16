@@ -2,10 +2,7 @@ const metaNavigationData = ["Impressum", "Datenschutz"];
 
 export const MetaNavigation = () => {
 	return (
-		<nav
-			aria-label="Meta Navigation"
-			className="md:pl-4"
-		>
+		<nav aria-label="Meta Navigation" className="md:pl-4">
 			<ul className="flex flex-col items-center gap-2 md:flex-row md:gap-1">
 				{metaNavigationData.map((item) => (
 					<li key={item}>
