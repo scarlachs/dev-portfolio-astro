@@ -9,4 +9,5 @@ export type Image = {
 export type Meta = {
 	title: string;
 	description: string;
+	robots: "noindex, nofollow" | "";
 };
