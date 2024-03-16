@@ -48,9 +48,9 @@ export const SocialNavigation = () => {
 			className="max-md:mx-auto"
 		>
 			<NavigationMenuList>
-				{data.map((item, i) => {
+				{data.map((item) => {
 					return (
-						<NavigationMenuItem key={i}>
+						<NavigationMenuItem key={item.name}>
 							<Button
 								variant="ghost"
 								size="icon"

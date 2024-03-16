@@ -9,6 +9,7 @@ export type IntroData = {
 		label: string;
 		link: string;
 		variant?: "default" | "outline" | "secondary" | "ghost" | "link";
+		key: string;
 	}>;
 };
 
@@ -38,6 +39,7 @@ const Text = ({ data }: Text) => {
 						<Button
 							asChild
 							variant={item.variant ? item.variant : undefined}
+							key={item.key}
 						>
 							<a href={item.link}>{item.label}</a>
 						</Button>
