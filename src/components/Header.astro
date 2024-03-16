@@ -17,13 +17,12 @@ import { SocialNavigation } from "@/components/SocialNavigation";
 			<span class="sr-only">Pascal</span>
 		</a>
 
-		<!-- @TODO add divide classes and fix whitespace -->
-		<div class="flex items-center">
+		<div
+			class="flex items-center md:divide-x md:divide-slate-400 md:dark:divide-slate-600"
+		>
 			<MainNavigation />
 
-			<div
-				class="flex items-center md:ml-2 md:border-l md:border-slate-400 md:pl-2 md:dark:border-slate-600"
-			>
+			<div class="flex items-center md:ml-2 md:pl-2">
 				<SocialNavigation />
 				<DarkModeToggle client:load />
 			</div>
