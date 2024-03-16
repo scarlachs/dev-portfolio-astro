@@ -11,12 +11,12 @@
             "permanent": true
 		},
 		{
-			"source": "/photo",
+			"source": "/photos",
 			"destination": "https://pascal.photos",
             "permanent": true
 		},
 		{
-			"source": "/trustpilot",
+			"source": ["/trustpilot", "/review", "/reviews"],
 			"destination": "https://de.trustpilot.com/review/schaar.dev",
             "permanent": true
 		}
