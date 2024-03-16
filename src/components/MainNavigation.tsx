@@ -17,17 +17,17 @@ type MainNavigationItems = MainNavigationItem[];
 const mainNavigationData: MainNavigationItems = [
 	{
 		title: "Projekte",
-		href: "#projects",
+		href: "/#projects",
 		key: "projects",
 	},
 	{
 		title: "Über mich",
-		href: "#about",
+		href: "/#about",
 		key: "about",
 	},
 	{
 		title: "Kontakt",
-		href: "#contact",
+		href: "/#contact",
 		key: "contact",
 	},
 ];
