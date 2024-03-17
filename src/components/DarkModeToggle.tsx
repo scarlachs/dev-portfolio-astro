@@ -28,11 +28,6 @@ export const DarkModeToggle = () => {
 	const handleClickOutside = () => {
 		setVisible(false);
 	};
-	const handleHeaderClick = (event: any) => {
-		// do something
-
-		event.stopPropagation();
-	};
 
 	const ref = useOutsideClick(handleClickOutside);
 
