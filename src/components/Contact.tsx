@@ -82,6 +82,7 @@ export const Contact = ({ data }: Props) => {
 						data-mailto-token="hvdgoj5xjiovxoVnxcvvm9yzq"
 						data-mailto-vector="-5"
 						onClick={handleClick}
+						type="button"
 					>
 						E-Mail schreiben
 						<EnvelopeIcon className={className.buttonIcon} />
