@@ -55,7 +55,6 @@ const projectsData: ProjectData[] = [
 	{
 		text: {
 			title: "Landingpage: Mediendesigner",
-			/* copy: "Eine Startseite mit Kontaktformular, sowie eine Unterseite mit der Übersicht aller Projekte. Frontend-Umsetzung mit SvelteKit und Storyblok als Headless CMS angebunden.", */
 			copy: "",
 			website: "https://www.creativestudio-lb.de",
 			usedStack: ["sveltekit", "tailwindcss", "typescript", "storyblok"],
@@ -78,6 +77,11 @@ const projectsData: ProjectData[] = [
 						<Image
 							src={project.image.file}
 							alt={project.image.alt}
+							widths={[343, 686, 1296]}
+							sizes={
+								"(max-width: 639.98px) calc(100vw - 2rem), (max-width: 767.98px) 576px, (max-width: 1023.98px) 332px, (max-width: 1279.98px) 460px, (max-width: 1399.98px) 588px, 648px"
+							}
+							loading={i === 0 ? "eager" : "lazy"}
 						/>
 					</ProjectImage>
 				</div>
