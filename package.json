@@ -9,7 +9,7 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"format": "prettier --write --plugin-search-dir=. **/*.{cjs,mjs,ts,tsx,md,json,astro,css} --ignore-path .gitignore"
+		"format": "prettier --write . --config .prettierrc.cjs **/*.{cjs,mjs,ts,tsx,md,json,astro,css} --ignore-path .gitignore"
 	},
 	"devDependencies": {
 		"@fontsource-variable/montserrat": "^5.0.18",
