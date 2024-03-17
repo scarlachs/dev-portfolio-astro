@@ -7,7 +7,7 @@ export const MetaNavigation = () => {
 				{metaNavigationData.map((item) => (
 					<li key={item}>
 						<a
-							className="flex rounded-md p-2 text-sm text-slate-600 transition-colors hover:text-slate-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-950 dark:text-slate-400 dark:hover:text-slate-200 dark:focus-visible:ring-slate-300 max-md:w-full"
+							className="flex rounded-md p-2 text-sm text-slate-600 transition-colors hover:text-slate-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-950 max-md:w-full dark:text-slate-400 dark:hover:text-slate-200 dark:focus-visible:ring-slate-300"
 							href={`/${item.toLowerCase()}`}
 						>
 							{item}
