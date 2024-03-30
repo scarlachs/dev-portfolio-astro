@@ -27,7 +27,7 @@ export const Accordion = ({ data }: Props) => {
 						<AccordionItem value={`item-${i}`} key={`item-${i}`}>
 							<AccordionTrigger>{item.title}</AccordionTrigger>
 							<AccordionContent>
-								<div
+								<p
 									dangerouslySetInnerHTML={{
 										__html: item.text,
 									}}
