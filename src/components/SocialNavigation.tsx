@@ -31,13 +31,15 @@ type SocialIcon = {
 	name: string;
 };
 
+const className = "h-auto w-5";
+
 const SocialIcon = ({ name }: SocialIcon) => {
 	if (name === "GitHub") {
-		return <GitHubIcon className="h-auto w-5" />;
+		return <GitHubIcon className={className} />;
 	}
 
 	if (name === "LinkedIn") {
-		return <LinkedInIcon className="h-auto w-5" />;
+		return <LinkedInIcon className={className} />;
 	}
 };
 

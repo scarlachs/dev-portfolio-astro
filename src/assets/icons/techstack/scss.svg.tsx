@@ -2,12 +2,12 @@ type Props = {
 	className: string;
 };
 
-export function ScssIcon({ className }: Props) {
+export function ScssIcon({ className }: React.SVGAttributes<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="548"
-			height="411"
+			width={548}
+			height={411}
 			viewBox="0 0 547.8 410.6"
 			className={className}
 			aria-labelledby="title"

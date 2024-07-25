@@ -1,16 +1,14 @@
-type Props = {
-	className: string;
-};
+import { cn } from "@/ts/utils";
 
-export function AstroIcon({ className }: Props) {
+export function AstroIcon({ className }: React.SVGAttributes<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="64"
-			height="79"
+			width={64}
+			height={79}
 			viewBox="0 0 64 79"
 			fill="currentColor"
-			className={`${className} text-[#17191E] dark:text-white`}
+			className={cn(className, "text-[#17191E] dark:text-white")}
 			aria-labelledby="title"
 		>
 			<title id="title">Astro</title>

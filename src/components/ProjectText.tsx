@@ -17,11 +17,14 @@ import { ButtonGroup } from "@/components/ButtonGroup";
 import { Button } from "@/components/ui/button";
 import { type ReactNode } from "react";
 import { className } from "@/ts/constants";
+import { ShadcnIcon } from "@/assets/icons/techstack/shadcn.svg";
+import { NextjsIcon } from "@/assets/icons/techstack/nextjs.svg";
 
 type stack =
 	| "html"
 	| "css"
 	| "tailwindcss"
+	| "shadcn"
 	| "bootstrap"
 	| "scss"
 	| "javascript"
@@ -30,6 +33,7 @@ type stack =
 	| "webpack"
 	| "astro"
 	| "react"
+	| "nextjs"
 	| "typo3"
 	| "storyblok";
 
@@ -56,6 +60,9 @@ const StackIcons = ({ tech }: TechStack) => {
 		if (item === "tailwindcss") {
 			items.push(<TailwindcssIcon className={className} key={item} />);
 		}
+		if (item === "shadcn") {
+			items.push(<ShadcnIcon className={className} key={item} />);
+		}
 		if (item === "html") {
 			items.push(<HtmlIcon className={className} key={item} />);
 		}
@@ -80,6 +87,9 @@ const StackIcons = ({ tech }: TechStack) => {
 		if (item === "react") {
 			items.push(<ReactIcon className={className} key={item} />);
 		}
+		if (item === "nextjs") {
+			items.push(<NextjsIcon className={className} key={item} />);
+		}
 		if (item === "typo3") {
 			items.push(<Typo3Icon className={className} key={item} />);
 		}
@@ -98,18 +108,16 @@ const StackIcons = ({ tech }: TechStack) => {
 };
 
 const GitHubButton = ({ link }: GitHub) => {
-	if (link) {
-		return (
-			<Button variant="secondary" asChild rel="noopener">
-				<a href={link}>
-					Code ansehen
-					<GitHubIcon className={className.buttonIcon} />
-				</a>
-			</Button>
-		);
-	}
-
-	return false;
+	return link ? (
+		<Button variant="secondary" asChild rel="noopener">
+			<a href={link}>
+				Code ansehen
+				<GitHubIcon className={className.buttonIcon} />
+			</a>
+		</Button>
+	) : (
+		false
+	);
 };
 
 export type TextItem = {
@@ -134,10 +142,8 @@ export const ProjectText = ({ data, index }: Props) => {
 			}
 		>
 			<StackIcons tech={data.usedStack} />
-
 			<h2 className="text-2xl font-bold md:text-3xl">{data.title}</h2>
 			<p className="mt-2.5 text-balance">{data.copy}</p>
-
 			<ButtonGroup className="mt-5">
 				<Button asChild rel="noopener" key="website">
 					<a href={data.website} target="_blank">

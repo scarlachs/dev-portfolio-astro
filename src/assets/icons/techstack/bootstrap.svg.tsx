@@ -1,15 +1,11 @@
-import { version } from "react";
-
-type Props = {
-	className: string;
-};
-
-export function BootstrapIcon({ className }: Props) {
+export function BootstrapIcon({
+	className,
+}: React.SVGAttributes<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="512"
-			height="408"
+			width={512}
+			height={408}
 			viewBox="0 0 512 408"
 			className={className}
 			aria-labelledby="title"
@@ -18,43 +14,43 @@ export function BootstrapIcon({ className }: Props) {
 			<defs>
 				<linearGradient
 					id="bs-logo-a"
-					x1="76.079"
-					x2="523.48"
-					y1="10.798"
-					y2="365.945"
+					x1={76.079}
+					x2={523.48}
+					y1={10.798}
+					y2={365.945}
 					gradientUnits="userSpaceOnUse"
 				>
 					<stop stopColor="#9013fe" />
-					<stop offset="1" stopColor="#6610f2" />
+					<stop offset={1} stopColor="#6610f2" />
 				</linearGradient>
 				<linearGradient
 					id="bs-logo-b"
-					x1="193.508"
-					x2="293.514"
-					y1="109.74"
-					y2="278.872"
+					x1={193.508}
+					x2={293.514}
+					y1={109.74}
+					y2={278.872}
 					gradientUnits="userSpaceOnUse"
 				>
 					<stop stopColor="#fff" />
-					<stop offset="1" stopColor="#f1e5fc" />
+					<stop offset={1} stopColor="#f1e5fc" />
 				</linearGradient>
 				<filter
 					xmlns="http://www.w3.org/2000/svg"
 					id="bs-logo-c"
-					width="197"
-					height="249"
-					x="161.901"
-					y="83.457"
+					width={197}
+					height={249}
+					x={161.901}
+					y={83.457}
 					colorInterpolationFilters="sRGB"
 					filterUnits="userSpaceOnUse"
 				>
-					<feFlood floodOpacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity={0} result="BackgroundImageFix" />
 					<feColorMatrix
 						in="SourceAlpha"
 						values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
 					/>
-					<feOffset dy="4" />
-					<feGaussianBlur stdDeviation="8" />
+					<feOffset dy={4} />
+					<feGaussianBlur stdDeviation={8} />
 					<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
 					<feBlend
 						in2="BackgroundImageFix"

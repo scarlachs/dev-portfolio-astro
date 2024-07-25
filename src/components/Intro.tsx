@@ -32,7 +32,6 @@ const Text = ({ data }: Text) => {
 			<p className="mb-10 text-lg sm:max-lg:w-10/12 xl:w-11/12">
 				{data.copy}
 			</p>
-
 			<ButtonGroup>
 				{data.buttons.map((item) => {
 					return (

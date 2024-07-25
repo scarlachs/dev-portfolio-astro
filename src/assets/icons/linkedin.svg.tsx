@@ -1,13 +1,10 @@
-type Props = {
-	className: string;
-};
 
-export function LinkedInIcon({ className }: Props) {
+export function LinkedInIcon({ className }: React.SVGAttributes<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="448"
-			height="512"
+			width={448}
+			height={512}
 			viewBox="0 0 448 512"
 			fill="currentColor"
 			className={className}

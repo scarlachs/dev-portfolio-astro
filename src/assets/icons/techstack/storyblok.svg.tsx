@@ -1,13 +1,11 @@
-type Props = {
-	className: string;
-};
-
-export function StoryblokIcon({ className }: Props) {
+export function StoryblokIcon({
+	className,
+}: React.SVGAttributes<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="45"
-			height="53"
+			width={45}
+			height={53}
 			viewBox="0 0 45 53"
 			className={className}
 			aria-labelledby="title"
@@ -16,7 +14,7 @@ export function StoryblokIcon({ className }: Props) {
 			<g
 				id="storyblok-logo-kit"
 				stroke="none"
-				strokeWidth="1"
+				strokeWidth={1}
 				fill="none"
 				fillRule="evenodd"
 			>
