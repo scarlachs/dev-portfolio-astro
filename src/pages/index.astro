@@ -32,43 +32,6 @@ const introData: IntroData = {
 	],
 };
 
-const list = `
-    <ul class="list-disc list-inside my-2">
-        <li>
-            <a class="underline hover:no-underline" href="https://www.netfox.de" rel="noopener" target="_blank">NETFOX AG</a>
-        </li>
-        <li>
-            <a class="underline hover:no-underline" href="https://www.alerds-stiftung.de" rel="noopener" target="_blank">Alerds-Stiftung</a>
-        </li>
-        <li>
-            <a class="underline hover:no-underline" href="https://www.tricor.de" rel="noopener" target="_blank">TRICOR Packaging & Logistics AG</a>
-        </li>
-        <li>
-            <a class="underline hover:no-underline" href="https://www.wendweb.de" rel="noopener" target="_blank">wendweb GmbH</a>
-        </li>
-        <li>
-            <a class="underline hover:no-underline" href="https://www.steinberg-gaerten.de" rel="noopener" target="_blank">STEINBERG.GÄRTEN e.K.</a>
-        </li>
-        <li>
-            <a class="underline hover:no-underline" href="https://www.schwartau-professional.de/beratung-service/individuelle-etiketten-fuer-portionsglaeser-konfigurieren#c51" rel="noopener" target="_blank">SCHWARTAUER WERKE GmbH & Co. KG - Individuelle Etiketten konfigurieren</a>
-        </li>
-    </ul>`;
-
-const accordionData: AccordionData[] = [
-	{
-		title: "Wie fing alles an?",
-		text: "Bereits 2010 lernte ich im Schulunterricht HTML und CSS kennen. Das war der Anfang einer jahrelangen Leidenschaft. Vier Jahre später habe ich für mein Hobby, die Fotografie, eine eigene Website erstellt. Dadurch sammelte ich zusätzlich erste Erfahrungen mit JavaScript und Bootstrap.<br>2020 habe ich für meinen Bruder, der als Fitness Coach selbstständig ist, eine Website entwickelt und konnte meine Erfahrungen in Bootstrap und TypeScript vertiefen. Seit August 2021 bin ich als Frontend-Entwickler tätig.",
-	},
-	{
-		title: "Wie verbringe ich meine Freizeit?",
-		text: "In meiner Freizeit bin ich gerne sportlich aktiv. Sei es auf dem Fahrrad, bei einem Spaziergang zum Sonnenaufgang oder einer Wanderung in der Natur, ob am Berg oder See. Im See schwimme ich im Sommer und bade im Winter.<br>Nachts beobachte ich den Nachthimmel und verliere mich in dem Moment.",
-	},
-	{
-		title: "Gibt es noch weitere Projekte?",
-		text: `Als Frontend-Entwickler von 08/2021 bis 06/2024 sind bei der wendweb GmbH in Hannover unter anderem folgende Projekte entstanden:${list}Jedes Projekt wurde mit TYPO3, Bootstrap, SCSS und TypeScript umgesetzt.`,
-	},
-];
-
 const contactData: ContactData = {
 	title: "Zeit für einen Kaffee?",
 	copy: "Du möchtest über neue Projekte sprechen? Lass uns zusammenkommen — ob per E-Mail oder über LinkedIn. Ich freue mich darauf, bei einem virtuellen Kaffee deine Visionen zu besprechen und zu sehen, wie ich als Frontend-Entwickler dazu beitragen kann, sie Wirklichkeit werden zu lassen.",
@@ -89,7 +52,7 @@ const contactData: ContactData = {
 
 	<Projects />
 
-	<Accordion data={accordionData} client:idle />
+	<Accordion client:idle />
 
 	<Contact data={contactData} client:idle />
 </DefaultLayout>

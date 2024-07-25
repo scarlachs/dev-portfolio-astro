@@ -1,13 +1,11 @@
-type Props = {
-	className: string;
-};
-
-export function TailwindcssIcon({ className }: Props) {
+export function TailwindcssIcon({
+	className,
+}: React.SVGAttributes<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="54"
-			height="33"
+			width={54}
+			height={33}
 			viewBox="0 0 54 33"
 			fill="none"
 			className={className}

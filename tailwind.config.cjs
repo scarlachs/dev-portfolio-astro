@@ -38,6 +38,10 @@ module.exports = {
 			},
 			slate: colors.slate,
 			white: colors.white,
+			zinc: {
+				50: colors.zinc["50"],
+				950: colors.zinc["950"],
+			},
 		}),
 		container: ({ theme }) => ({
 			center: true,

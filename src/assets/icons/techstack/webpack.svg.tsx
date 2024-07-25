@@ -1,13 +1,9 @@
-type Props = {
-	className: string;
-};
-
-export function WebpackIcon({ className }: Props) {
+export function WebpackIcon({ className }: React.SVGAttributes<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="600"
-			height="600"
+			width={600}
+			height={600}
 			viewBox="0 0 600 600"
 			className={className}
 			aria-labelledby="title"

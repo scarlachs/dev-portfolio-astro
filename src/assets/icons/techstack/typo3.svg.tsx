@@ -1,16 +1,14 @@
-type Props = {
-	className: string;
-};
+import { cn } from "@/ts/utils";
 
-export function Typo3Icon({ className }: Props) {
+export function Typo3Icon({ className }: React.SVGAttributes<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="448"
-			height="512"
+			width={448}
+			height={512}
 			viewBox="0 0 448 512"
 			fill="currentColor"
-			className={`${className} text-[#515151] dark:text-[#FF8700]`}
+			className={cn(className, "text-[#515151] dark:text-[#FF8700]")}
 			aria-labelledby="title"
 		>
 			<title id="title">TYPO3</title>

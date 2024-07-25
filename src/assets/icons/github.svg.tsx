@@ -1,13 +1,9 @@
-type Props = {
-	className: string;
-};
-
-export function GitHubIcon({ className }: Props) {
+export function GitHubIcon({ className }: React.SVGAttributes<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="496"
-			height="512"
+			width={496}
+			height={512}
 			viewBox="0 0 496 512"
 			fill="currentColor"
 			className={className}

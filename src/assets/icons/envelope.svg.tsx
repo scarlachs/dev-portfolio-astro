@@ -1,13 +1,11 @@
-type Props = {
-	className: string;
-};
-
-export const EnvelopeIcon = ({ className }: Props) => {
+export const EnvelopeIcon = ({
+	className,
+}: React.SVGAttributes<SVGSVGElement>) => {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="512"
-			height="512"
+			width={512}
+			height={512}
 			viewBox="0 0 512 512"
 			fill="currentColor"
 			className={className}
