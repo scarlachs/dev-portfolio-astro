@@ -1,3 +1,4 @@
+import type React from "react";
 import { cn } from "@/ts/utils";
 
 export function ShadcnIcon({ className }: React.SVGAttributes<SVGSVGElement>) {

@@ -15,10 +15,10 @@ import { Typo3Icon } from "@/assets/icons/techstack/typo3.svg";
 import { StoryblokIcon } from "@/assets/icons/techstack/storyblok.svg";
 import { ButtonGroup } from "@/components/ButtonGroup";
 import { Button } from "@/components/ui/button";
-import { type ReactNode } from "react";
 import { className } from "@/ts/constants";
 import { ShadcnIcon } from "@/assets/icons/techstack/shadcn.svg";
 import { NextjsIcon } from "@/assets/icons/techstack/nextjs.svg";
+import type React from "react";
 
 type stack =
 	| "html"
@@ -48,7 +48,7 @@ type TechStack = {
 const StackIcons = ({ tech }: TechStack) => {
 	const className = "size-7";
 
-	const items: ReactNode[] = [];
+	const items: React.ReactNode[] = [];
 
 	tech.forEach((item: stack) => {
 		if (item === "scss") {

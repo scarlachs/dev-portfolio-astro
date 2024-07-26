@@ -1,3 +1,5 @@
+import type React from "react";
+
 export function TypescriptIcon({
 	className,
 }: React.SVGAttributes<SVGSVGElement>) {

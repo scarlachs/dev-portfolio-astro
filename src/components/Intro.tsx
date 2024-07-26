@@ -1,6 +1,6 @@
 import { ButtonGroup } from "@/components/ButtonGroup";
 import { Button } from "@/components/ui/button";
-import type { ReactNode } from "react";
+import type React from "react";
 
 export type IntroData = {
 	title: string;
@@ -14,7 +14,7 @@ export type IntroData = {
 };
 
 type Image = {
-	children: ReactNode;
+	children: React.ReactNode;
 };
 
 type Text = {

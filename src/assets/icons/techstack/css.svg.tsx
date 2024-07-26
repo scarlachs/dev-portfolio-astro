@@ -1,3 +1,5 @@
+import type React from "react";
+
 export function CssIcon({ className }: React.SVGAttributes<SVGSVGElement>) {
 	return (
 		<svg

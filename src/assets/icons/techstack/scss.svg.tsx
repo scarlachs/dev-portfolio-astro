@@ -1,6 +1,4 @@
-type Props = {
-	className: string;
-};
+import type React from "react";
 
 export function ScssIcon({ className }: React.SVGAttributes<SVGSVGElement>) {
 	return (
