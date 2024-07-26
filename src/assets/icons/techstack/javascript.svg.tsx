@@ -1,3 +1,5 @@
+import type React from "react";
+
 export function JavascriptIcon({
 	className,
 }: React.SVGAttributes<SVGSVGElement>) {

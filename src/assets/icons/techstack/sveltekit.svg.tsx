@@ -1,3 +1,5 @@
+import type React from "react";
+
 export function SvelteKitIcon({
 	className,
 }: React.SVGAttributes<SVGSVGElement>) {

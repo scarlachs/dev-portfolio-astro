@@ -4,15 +4,11 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/ui/accordion";
-import type { ReactNode } from "react";
+import type React from "react";
 
-export type AccordionData = {
+type AccordionData = {
 	trigger: string;
-	content: ReactNode;
-};
-
-type Props = {
-	data: AccordionData[];
+	content: React.ReactNode;
 };
 
 const wendwebProjects = [
@@ -28,6 +24,19 @@ const wendwebProjects = [
 		link: "https://www.schwartau-professional.de/beratung-service/individuelle-etiketten-fuer-portionsglaeser-konfigurieren#c51",
 		label: "SCHWARTAUER WERKE GmbH & Co. KG - Individuelle Etiketten konfigurieren",
 	},
+];
+
+const languages = ["HTML", "CSS", "SCSS", "JavaScript", "TypeScript"];
+
+const contentManagementSystems = ["TYPO3", "Storyblok", "Wordpress"];
+
+const frameworks = [
+	"TailwindCSS",
+	"Bootstrap",
+	"SvelteKit",
+	"Astro",
+	"Next.js",
+	"React",
 ];
 
 const className = "mb-2 list-inside list-disc";
@@ -99,6 +108,31 @@ const accordionData: AccordionData[] = [
 					Jedes Projekt wurde mit TYPO3, Bootstrap, SCSS und
 					TypeScript umgesetzt.
 				</p>
+			</>
+		),
+	},
+	{
+		trigger: "Gibt es noch weitere Erfahrungen?",
+		content: (
+			<>
+				<p className="font-bold">Sprachen</p>
+				<ul className={className}>
+					{languages.map((language) => {
+						return <li key={language}>{language}</li>;
+					})}
+				</ul>
+				<p className="font-bold">Frameworks & Libraries</p>
+				<ul className={className}>
+					{frameworks.map((framework) => {
+						return <li key={framework}>{framework}</li>;
+					})}
+				</ul>
+				<p className="font-bold">CMS</p>
+				<ul className={className}>
+					{contentManagementSystems.map((system) => {
+						return <li key={system}>{system}</li>;
+					})}
+				</ul>
 			</>
 		),
 	},

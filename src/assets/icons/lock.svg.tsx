@@ -1,3 +1,5 @@
+import type React from "react";
+
 export function LockIcon({ className }: React.SVGAttributes<SVGSVGElement>) {
 	return (
 		<svg

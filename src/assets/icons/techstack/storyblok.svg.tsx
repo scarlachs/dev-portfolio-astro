@@ -1,3 +1,5 @@
+import type React from "react";
+
 export function StoryblokIcon({
 	className,
 }: React.SVGAttributes<SVGSVGElement>) {

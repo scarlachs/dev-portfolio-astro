@@ -1,11 +1,9 @@
-import type { ReactNode } from "react";
+import type React from "react";
 
-type Props = {
-	children: ReactNode;
-	className?: string;
-};
-
-export const ButtonGroup = ({ children, className }: Props) => {
+export const ButtonGroup = ({
+	children,
+	className,
+}: React.HTMLAttributes<HTMLElement>) => {
 	return (
 		<div
 			className={`flex gap-5 flex-wrap${className ? " " + className : ""}`}
